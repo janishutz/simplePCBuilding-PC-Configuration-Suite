@@ -1,0 +1,16 @@
+MDScreen:
+    name: "Config"
+    md_bg_color: (0,0,1,0.5)
+    MDFloatLayout:
+        cols:1
+        MDFlatButton:
+            text: "Back"
+            pos_hint: {"x": 0.15, "y": 0.1}
+            font_size: 20
+            md_bg_color: (0, 0, 0, 1)
+            size_hint: 0.1, 0.05
+            on_release:
+                app.root.current = "HomeScreen"
+                root.manager.transition.direction = "left"
+        MDFlatButton:
+            text: "Test"

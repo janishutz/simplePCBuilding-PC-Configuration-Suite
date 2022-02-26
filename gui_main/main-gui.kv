@@ -1,0 +1,31 @@
+Home:
+    name: "HomeScreen"
+    radius: [25, 25, 25, 25]
+    md_bg_color: app.theme_cls.accent_color
+    GridLayout:
+        cols: 1
+        Label:
+            text: "PC-Configurator"
+            font_size: 50
+            color: (50, 50, 255, 1)
+            bold: True
+            italic: True
+        FloatLayout:
+            GridLayout:
+                cols: 3
+                size_hint: 0.94, 0.8
+                pos_hint: {"x":0.03, "y":0.1}
+                Button:
+                    text: "Configure"
+                    background_color: (0.1, 0.1, 1, 0.5)
+                    on_release:
+                        app.root.current = "Config"
+                        root.manager.transition.direction = "right"
+                Button:
+                    text: "Settings"
+                    background_color: (0.1, 0.1, 1, 0.5)
+                    on_release:
+                        root.test()
+                Button:
+                    text: "Quit"
+                    background_color: (0.1, 0.1, 1, 0.5)

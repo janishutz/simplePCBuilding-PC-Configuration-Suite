@@ -1,0 +1,24 @@
+MDScreen:
+    name: "Splash"
+    on_enter: self.ids.progress.start()
+    md_bg_color: app.theme_cls.accent_color
+    GridLayout:
+        cols: 1
+        Label:
+            text: "PC-Configurator"
+            bold: True
+            italic: True
+            font_size: 40
+            color: app.theme_cls.primary_color
+        FloatLayout:
+            BoxLayout:
+                pos_hint: {"center_y": .3, "center_x": .5}
+                padding: "10dp"
+                size_hint_x: .7
+
+                MDProgressBar:
+                    id: progress
+                    orientation: "horizontal"
+                    type: "indeterminate"
+                    running_duration: 1
+                    catching_duration: 1
