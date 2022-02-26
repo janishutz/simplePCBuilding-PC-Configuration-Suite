@@ -1,0 +1,57 @@
+RootScreen:
+    MainScreen:
+    AddComponent:
+    RemoveComponent:
+    ModifyComponent:
+
+<MainScreen>:
+    name: "Main"
+    GridLayout:
+        cols:1
+        Label:
+            text: "Welcome to the simplePCBuilding\n          PC-Configuration-Suite\n           Component-Manager!"
+            font_size:30
+            color: (0,0,1,0.6)
+        FloatLayout:
+            GridLayout:
+                size_hint: 0.9, 0.9
+                pos_hint:{"x":0.05, "y":0.05}
+                cols:3
+                Button:
+                    text: "New Component"
+                    on_release:
+                        app.root.current = "NewComp"
+                        root.manager.transition.direction = "right"
+                Button:
+                    text: "Modify Component"
+                    on_release:
+                        app.root.current = "ModComp"
+                        root.manager.transition.direction = "down"
+                Button:
+                    text: "Remove Component"
+                    on_release:
+                        app.root.current = "RemComp"
+                        root.manager.transition.direction = "left"
+
+<AddComponent>:
+    name: "NewComp"
+    GridLayout:
+        cols:1
+        Label:
+            text: "New Component"
+
+<ModifyComponent>:
+    name: "ModComp"
+    GridLayout:
+        cols:1
+        Label:
+            text: "Modify Component"
+
+
+<RemoveComponent>:
+    name: "RemComp"
+    GridLayout:
+        cols:1
+        Label:
+            text: "Remove Component"
+

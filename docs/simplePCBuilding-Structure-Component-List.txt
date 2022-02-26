@@ -1,0 +1,13 @@
+--------------
+MOTHERBOARDS
+--------------
+Require following:
+	SOCKET: (Such as AM4, AM5, LGA 1200, LGA 1700)
+	CHIPSET: (Such as AMD-B550, AMD-X570, Intel-Z690)
+	SIZE: (Such as ATX, E-ATX, mATX)
+	RAM_SUPPORT: (Such as DDR4-3200)
+	PCIeSLOTS: (e.g. 2x16 1x8 1x4, 1x16 1x8)
+	NVMeSLOTS: (e.g. 2xM-Key 1xB+M-Key, 2xM-Key)
+	FAN_HEADERS: (e.g. 2)
+	ARGB_HEADERS
+	F_CONNECTORS: (LIST!!!)
