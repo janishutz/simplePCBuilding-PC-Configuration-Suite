@@ -24,8 +24,7 @@ class Splash(MDScreen):
 
 
 class Home(MDScreen):
-    def test(self):
-        print("class")
+    pass
 
 
 class ConfigureScreen(MDScreen):

@@ -1,16 +1,22 @@
 MDScreen:
     name: "Config"
-    md_bg_color: (0,0,1,0.5)
+    md_bg_color: (0,0,1,0.3)
     MDFloatLayout:
         cols:1
         MDFlatButton:
             text: "Back"
-            pos_hint: {"x": 0.15, "y": 0.1}
+            pos_hint: {"x": 0.07, "y": 0.07}
             font_size: 20
             md_bg_color: (0, 0, 0, 1)
             size_hint: 0.1, 0.05
             on_release:
                 app.root.current = "HomeScreen"
                 root.manager.transition.direction = "left"
-        MDFlatButton:
-            text: "Test"
+        MDTextField:
+            hint_text: "Test"
+            id: test
+            size_hint: 0.2, 0.1
+            pos_hint: {"x": 0.4, "y": 0.2}
+        MDCheckbox:
+            size_hint: 0.05, 0.05
+            size: "24dp", "24dp"

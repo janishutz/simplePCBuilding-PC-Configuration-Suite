@@ -25,7 +25,8 @@ Home:
                     text: "Settings"
                     background_color: (0.1, 0.1, 1, 0.5)
                     on_release:
-                        root.test()
+                        app.root.current = "Settings"
+                        root.manager.transition.direction = "up"
                 Button:
                     text: "Quit"
                     background_color: (0.1, 0.1, 1, 0.5)
