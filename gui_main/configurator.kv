@@ -1,22 +1,31 @@
 MDScreen:
     name: "Config"
-    md_bg_color: (0,0,1,0.3)
+    # md_bg_color: app.theme_cls.accent_color
+    md_bg_color: (0, 0, 0, 1)
     MDFloatLayout:
         cols:1
         MDFlatButton:
             text: "Back"
             pos_hint: {"x": 0.07, "y": 0.07}
             font_size: 20
-            md_bg_color: (0, 0, 0, 1)
+            md_bg_color: app.theme_cls.primary_color
             size_hint: 0.1, 0.05
             on_release:
                 app.root.current = "HomeScreen"
                 root.manager.transition.direction = "left"
+        Spinner:
+            text: "Haupt-Anwendungsbereich"
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.6, "y": 0.8}
+            values: ["Gaming", "Videobearbeitung", "Fotobearbeitung", "Live-Streaming", "Office/Internet"]
+        Spinner:
+            text: ""
+            size_hint: 0.3, 0.1
         MDTextField:
-            hint_text: "Test"
+            hint_text: "Budget"
             id: test
-            size_hint: 0.2, 0.1
-            pos_hint: {"x": 0.4, "y": 0.2}
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.1, "y": 0.8}
         MDCheckbox:
             size_hint: 0.05, 0.05
             size: "24dp", "24dp"

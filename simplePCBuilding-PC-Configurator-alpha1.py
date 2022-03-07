@@ -1,9 +1,8 @@
 # This is the main runtime of the simplePCBuilding-PC-Configurator
 # IMPORTS
 import time
-from kivy.uix.screenmanager import Screen, ScreenManager
+from kivy.uix.screenmanager import ScreenManager
 from kivy.uix.popup import Popup
-from kivy.app import App
 from kivy.lang import Builder
 from kivy.clock import mainthread
 from kivymd.app import MDApp
@@ -11,7 +10,6 @@ from kivymd.uix.screen import MDScreen
 from kivy.clock import Clock
 
 version = "alpha 1.0"
-print(f"Launching the simplePCBuilding-PC-Configurator Version {version}!...\nthis might take some time...")
 
 
 ###########
@@ -43,7 +41,7 @@ class PCConfigurator(MDApp):
         self.title = "simplePCBuilding-PC-Configurator"
         self.theme_cls.primary_palette = "Blue"
         self.theme_cls.accent_palette = "BlueGray"
-        # self.icon = "./BiogasControllerAppLogo.png"
+        self.icon = "./data/Logo.png"
         screen_manager.add_widget(Builder.load_file("./gui_main/splashscreen.kv"))
         screen_manager.add_widget(Builder.load_file("./gui_main/main-gui.kv"))
         screen_manager.add_widget(Builder.load_file("./gui_main/configurator.kv"))

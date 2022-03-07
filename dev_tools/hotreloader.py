@@ -12,7 +12,7 @@ BoxLayout:
         size_hint_x: .3
         path: app.path_to_kv_file
         errors: True
-        errors_text_color: 1, 1, 0, 1
+        errors_text_color: 1, 0, 0, 1
         errors_background_color: app.theme_cls.bg_dark
 '''
 
