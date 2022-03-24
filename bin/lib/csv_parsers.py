@@ -55,11 +55,3 @@ class CsvWrite:
         with open(path, "a") as appenddata:
             self.__appending = csv.writer(appenddata, delimiter=',', quoting=csv.QUOTE_MINIMAL)
             self.__appending.writerow(value)
-
-    def initialize(self):
-        with open("../../data/ingredients/ingredients.csv", "w") as initializedata:
-            self.__creating = csv.writer(initializedata, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-            self.__creating.writerow(["Setup-Success"])
-        with open("../../data/recipes/recipes.csv", "w") as initializedata:
-            self.__creating = csv.writer(initializedata, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-            self.__creating.writerow(["Setup-Success"])

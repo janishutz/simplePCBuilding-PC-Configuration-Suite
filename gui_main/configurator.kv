@@ -19,11 +19,18 @@ MDScreen:
             pos_hint: {"x": 0.6, "y": 0.8}
             values: ["Gaming", "Videobearbeitung", "Fotobearbeitung", "Live-Streaming", "Office/Internet"]
         Spinner:
-            text: ""
+            text: "Bildschirmauflösung"
             size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.1, "y": 0.6}
+            values: ["720p (HD)", "1080p (FullHD)", "1440p (2K, WQHD)", "2160p (4K, UHD)", "4320p (8K)"]
+        Spinner:
+            text: "Betriebssystem"
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.1, "y": 0.6}
+            values: ["Windows 10", "Windows 11", "GNU/Linux (Alle Distributionen)"]
         MDTextField:
             hint_text: "Budget"
-            id: test
+            id: budget_info
             size_hint: 0.3, 0.1
             pos_hint: {"x": 0.1, "y": 0.8}
         MDCheckbox:

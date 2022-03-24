@@ -1,3 +1,19 @@
 simplePCBuilding-CPU-data-Library
-ID,DIGITEC-LINK,MANUFACTURER,SOCKET,ARCHITECTURE,SERIES,EARLIEST_COMPATIBLE_CHIPSET,TDP,FULL_NAME
-1,,AMD,AM4,Zen3,Ryzen 5000,B450,65,AMD Ryzen 5 5600X
+ID,DIGITEC-LINK,MANUFACTURER,SOCKET,ARCHITECTURE,SERIES,EARLIEST_COMPATIBLE_CHIPSET,TDP/MTP,FULL_NAME,Boxed Cooler
+1,https://www.digitec.ch/de/s1/product/amd-ryzen-5-5600x-am4-370-ghz-6-core-prozessor-13987919,AMD,AM4,Zen3,Ryzen 5000,B450,65,AMD Ryzen 5 5600X,AMD Wraith Stealth
+2,https://www.digitec.ch/de/s1/product/amd-ryzen-7-5800x-am4-380-ghz-8-core-prozessor-13987918,AMD,AM4,Zen3,Ryzen 5000,X470,105,AMD Ryzen 7 5800X,None
+3,https://www.digitec.ch/de/s1/product/amd-ryzen-9-5900x-am4-370-ghz-12-core-prozessor-13987917,AMD,AM4,Zen3,Ryzen 5000,X570,105,AMD Ryzen 9 5900X,None
+4,https://www.digitec.ch/de/s1/product/amd-ryzen-9-5950x-am4-340-ghz-16-core-prozessor-13987916,AMD,Am4,Zen3,Ryzen 5000,X570,105,AMD Ryzen 9 5950X,None
+5,https://www.digitec.ch/de/s1/product/intel-core-i3-12100f-lga-1700-330-ghz-4-core-prozessor-18332884,Intel,LGA1700,Alder Lake,12th Gen Core,H610,58,Intel Core i3-12100F
+6,https://www.digitec.ch/de/s1/product/intel-core-i5-12400f-lga1700-cache-lga-1700-250-ghz-6-core-prozessor-18321458,Intel,LGA1700,Alder Lake,12th Gen Core,B660,117,Intel Core i5-12400F
+7,https://www.digitec.ch/de/s1/product/intel-core-i5-12400-lga-1700-250-ghz-6-core-prozessor-17761782,Intel,LGA1700,Alder Lake,12th Gen Core,B660,117,Intel Core i5-12400
+8,https://www.digitec.ch/de/s1/product/intel-core-i5-12600-lga-1700-330-ghz-prozessor-17761685,Intel,LGA1700,Alder Lake,12th Gen Core,B660,117,Intel Core i5-12600
+9,https://www.digitec.ch/de/s1/product/intel-core-i5-12600kf-lga-1700-370-ghz-10-core-prozessor-16552820,Intel,LGA1700,Alder Lake,12th Gen Core,Z690,150,Intel Core i5-12600KF
+10,https://www.digitec.ch/de/s1/product/intel-core-i5-12600k-lga-1700-370-ghz-10-core-prozessor-16552819,Intel,LGA1700,Alder Lake,12th Gen Core,Z690,150,Intel Core i5-12600K
+11,https://www.digitec.ch/de/s1/product/intel-core-i7-12700f-lga-1700-210-ghz-prozessor-17761785,Intel,LGA1700,Alder Lake,12th Gen Core,B660,180,Intel Core i7-12700F
+12,https://www.digitec.ch/de/s1/product/intel-core-i7-12700-lga-1700-210-ghz-12-core-prozessor-17761681,Intel,LGA1700,Alder Lake,12th Gen Core,B660,180,Intel Core i7-12700
+13,https://www.digitec.ch/de/s1/product/intel-core-i7-12700kf-lga-1700-360-ghz-12-core-prozessor-16552822,Intel,LGA1700,Alder Lake,12th Gen Core,Z690,190,Intel Core i7-12700KF
+14,https://www.digitec.ch/de/s1/product/intel-core-i7-12700k-lga-1700-360-ghz-12-core-prozessor-16552821,Intel,LGA1700,Alder Lake,12th Gen Core,Z690,190,Intel Core i7-12700K
+15,https://www.digitec.ch/de/s1/product/intel-cpucore-i9-12900kf-520ghz-lga16a-tray-lga-1700-16-core-prozessor-18555667,Intel,LGA1700,Alder Lake,12th Gen Core,Z690,241,Intel Core i9-12900KF
+16,https://www.digitec.ch/de/s1/product/intel-core-i9-12900k-lga-1700-320-ghz-16-core-prozessor-16552823,Intel,LGA1700,Alder Lake,12th Gen Core,Z690,241,Intel Core i9-12900K
+17,https://www.digitec.ch/de/s1/product/amd-ryzen-threadripper-3960x-trx4-380-ghz-24-core-prozessor-12325012,AMD,TR4,Threadripper,Threadripper 3000,
