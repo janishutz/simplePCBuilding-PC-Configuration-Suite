@@ -1,7 +1,7 @@
-MDScreen:
+ConfigureScreen:
     name: "Config"
-    # md_bg_color: app.theme_cls.accent_color
-    md_bg_color: (0, 0, 0, 1)
+    md_bg_color: app.theme_cls.accent_color
+    # md_bg_color: (0, 0, 0, 1)
     MDFloatLayout:
         cols:1
         MDFlatButton:
@@ -28,6 +28,16 @@ MDScreen:
             size_hint: 0.3, 0.1
             pos_hint: {"x": 0.1, "y": 0.6}
             values: ["Windows 10", "Windows 11", "GNU/Linux (Alle Distributionen)"]
+        Spinner:
+            text: "Bildschirmauflösung"
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.6, "y": 0.6}
+            values: ["720p (720x1280)", "1080p (1080x1920)", "2K/1440p (1440x2560)", "4K/2160p (2160x3840)"]
+        Spinner:
+            text: "Bildschrimwiederholrate"
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.1, "y": 0.6}
+            values: ["60Hz - 75Hz", "75 - 120Hz", "120Hz - 144Hz", "144 - 165Hz", "bis 250Hz", "Mehr als 250Hz"]
         MDTextField:
             hint_text: "Budget"
             id: budget_info
