@@ -16,33 +16,58 @@ ConfigureScreen:
         Spinner:
             text: "Haupt-Anwendungsbereich"
             size_hint: 0.3, 0.1
-            pos_hint: {"x": 0.6, "y": 0.8}
+            pos_hint: {"x": 0.6, "y": 0.85}
             values: ["Gaming", "Videobearbeitung", "Fotobearbeitung", "Live-Streaming", "Office/Internet"]
-        Spinner:
-            text: "Bildschirmauflösung"
-            size_hint: 0.3, 0.1
-            pos_hint: {"x": 0.1, "y": 0.6}
-            values: ["720p (HD)", "1080p (FullHD)", "1440p (2K, WQHD)", "2160p (4K, UHD)", "4320p (8K)"]
         Spinner:
             text: "Betriebssystem"
             size_hint: 0.3, 0.1
-            pos_hint: {"x": 0.1, "y": 0.6}
+            pos_hint: {"x": 0.1, "y": 0.55}
             values: ["Windows 10", "Windows 11", "GNU/Linux (Alle Distributionen)"]
         Spinner:
             text: "Bildschirmauflösung"
             size_hint: 0.3, 0.1
-            pos_hint: {"x": 0.6, "y": 0.6}
+            pos_hint: {"x": 0.6, "y": 0.7}
             values: ["720p (720x1280)", "1080p (1080x1920)", "2K/1440p (1440x2560)", "4K/2160p (2160x3840)"]
         Spinner:
             text: "Bildschrimwiederholrate"
             size_hint: 0.3, 0.1
-            pos_hint: {"x": 0.1, "y": 0.6}
+            pos_hint: {"x": 0.1, "y": 0.7}
             values: ["60Hz - 75Hz", "75 - 120Hz", "120Hz - 144Hz", "144 - 165Hz", "bis 250Hz", "Mehr als 250Hz"]
+        GridLayout:
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.6, "y": 0.55}
+            cols: 3
+            Label:
+                text: "Gaming"
+            MDCheckbox:
+                size: "24dp", "24dp"
+            Button:
+                text: "Welche?"
+        MDProgressBar:
+            orientation: "horizontal"
+            value: 0
+        GridLayout:
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.1, "y": 0.4}
+            cols: 2
+            Label:
+                text: "WLAN, Bluetooth"
+            MDCheckbox:
+                size: "24dp", "24dp"
+        GridLayout:
+            size_hint: 0.3, 0.1
+            pos_hint: {"x": 0.6, "y": 0.4}
+            cols: 2
+            Label:
+                text: "DVD"
+            MDCheckbox:
+                size: "24dp", "24dp"
         MDTextField:
             hint_text: "Budget"
             id: budget_info
             size_hint: 0.3, 0.1
-            pos_hint: {"x": 0.1, "y": 0.8}
-        MDCheckbox:
-            size_hint: 0.05, 0.05
-            size: "24dp", "24dp"
+            pos_hint: {"x": 0.1, "y": 0.85}
+        Button:
+            text: "Weitere Optionen"
+            size_hint: 0.3, 0.1
+            pos_hint: {"x":0.6, "y": 0.2}

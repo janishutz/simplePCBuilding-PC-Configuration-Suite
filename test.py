@@ -1,4 +1,4 @@
-class Human():
+class Human:
     def __init__(self, price, name="n/a"):
         print("human created")
         self.age = 0
@@ -19,10 +19,11 @@ class Human():
         ret += str(self.age)
         return ret
 
+
 class Lumberjack(Human):
     def __init__(self):
         print("Lumberjack created")
-        #ruft den Konstruktor der Oberklasse auf
+        # ruft den Konstruktor der Oberklasse auf
         Human.__init__(self, 300)
 
 
