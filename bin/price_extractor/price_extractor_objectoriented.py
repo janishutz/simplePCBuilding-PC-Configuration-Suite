@@ -47,14 +47,6 @@ class PriceExtractor:
         self.__productnumber = 0
         return self.__raw_list
 
-    def chg_website(self, website):
-        """Change the website (exact URL to product on https://digitec.ch/ only currently). Arguments:
-        Website. Only put direct link to product on digitec. Will return an error if a link other than digitec is
-        specified, though might work if the website structure is similar.
-
-        Example: PriceExtractor.chg_website(https://www.digitec.ch/de/s1/product/asus-radeon-rx-6600-dual-8-gb-grafikkarte-16833213)"""
-        self.__website = website
-
     def digitec_extractor(self):
         """Run through the entire list of links specified in the csv file that was selected either when loading the
         function or when specified through the method \"readfile\". NOTE: This method does not require any additional
