@@ -17,6 +17,7 @@ class TopGamesUpdater:
     def updater(self):
         self.__source = bin.lib.website_source_grabber.WebsiteSourceGrabber().grabber()
         self.list_generator()
+        return self.__return_value
 
     def list_generator(self):
         while self.__go == 1:
@@ -36,7 +37,5 @@ class TopGamesUpdater:
             except ValueError:
                 self.__go = 0
 
-        return self.__return_value
 
-
-TopGamesUpdater().updater()
+print(TopGamesUpdater().updater())
