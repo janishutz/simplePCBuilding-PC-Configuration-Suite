@@ -15,7 +15,7 @@ class TopGamesUpdater:
         self.__return_value = []
 
     def updater(self):
-        self.__source = bin.lib.website_source_grabber.WebsiteSourceGrabber().grabber()
+        self.__source = bin.lib.website_source_grabber.WebsiteSourceGrabber().grabber("https://store.steampowered.com/search/?filter=topsellers")
         self.list_generator()
         return self.__return_value
 

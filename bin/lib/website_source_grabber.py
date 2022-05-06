@@ -7,8 +7,6 @@ class WebsiteSourceGrabber:
         self.__res = ""
         self.__request_done = ""
 
-    def grabber(self):
-        self.__website = "https://store.steampowered.com/search/?filter=topsellers"
-        self.__res = requests.get(self.__website)
-        self.__request_done = self.__res.text
-        return self.__request_done
+    def grabber(self, website):
+        self.__res = requests.get(website).text
+        return self.__res
