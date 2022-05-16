@@ -30,7 +30,7 @@ class PriceExtractor:
 
     def readfile(self, filename):
         """Reads a new file that contains links in csv format. Arguments:
-        Filename. Either specify full path (e.g. /home/[username]/price_extractor/prices.csv), relative path when
+        Filename. Either specify full path (e.g. /home/[username]/webscratching/prices.csv), relative path when
         inside the folder of the executable (e.g. /pricedata/prices2.csv) or inside another folder that is located in
         the parent folder (e.g. ../pricedata/prices3.csv).
         Returns the content of the file inside of a list.

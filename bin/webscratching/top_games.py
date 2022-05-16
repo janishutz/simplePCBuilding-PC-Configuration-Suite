@@ -17,6 +17,7 @@ class TopGamesUpdater:
     def updater(self):
         self.__source = bin.lib.website_source_grabber.WebsiteSourceGrabber().grabber("https://store.steampowered.com/search/?filter=topsellers")
         self.list_generator()
+        return self.__return_value
 
     def list_generator(self):
         while self.__go == 1:
@@ -31,10 +32,10 @@ class TopGamesUpdater:
                         break
                     else:
                         self.__output += self.letter
-                print(self.__output)
                 self.__return_value.append(self.__output)
 
             except ValueError:
                 self.__go = 0
 
-        return self.__return_value
+
+TopGamesUpdater().updater()
