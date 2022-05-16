@@ -31,12 +31,10 @@ class TopGamesUpdater:
                         break
                     else:
                         self.__output += self.letter
+                print(self.__output)
                 self.__return_value.append(self.__output)
 
             except ValueError:
                 self.__go = 0
 
         return self.__return_value
-
-
-TopGamesUpdater().updater()
