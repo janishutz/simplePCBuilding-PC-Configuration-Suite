@@ -4,10 +4,16 @@ import time
 from kivy.uix.screenmanager import ScreenManager
 from kivy.uix.popup import Popup
 from kivy.lang import Builder
-from kivy.clock import mainthread
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
 from kivy.clock import Clock
+import bin.webscratching.top_games
+import bin.lib.csv_parsers
+
+
+topg = bin.webscratching.top_games.TopGamesUpdater()
+cvw = bin.lib.csv_parsers.CsvWrite()
+cvr = bin.lib.csv_parsers.CsvRead()
 
 version = "alpha 1.0"
 

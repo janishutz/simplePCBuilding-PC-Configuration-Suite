@@ -38,4 +38,4 @@ class TopGamesUpdater:
                 self.__go = 0
 
 
-print(TopGamesUpdater().updater())
+TopGamesUpdater().updater()
