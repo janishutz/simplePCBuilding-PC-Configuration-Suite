@@ -1,3 +1,6 @@
+# Deprecated
+This app will most likely not see any more development, as I am focusing on full stack web development. I might create a web based version of this with Vue.JS, as my focus shifted from Python to JavaScript in October 2022. 
+
 # simplePCBuilding-PC-Configuration-Suite
 You are just starting out to build a PC but you don't know how to configure that PC? This Software allows you to do exactly that. 
 
